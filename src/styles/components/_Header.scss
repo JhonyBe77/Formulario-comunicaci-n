@@ -1,0 +1,9 @@
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+
+.header {
+    padding: $padding;
+    text-align: center;
+    margin: 1rem auto;
+
+}
