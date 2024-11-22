@@ -1,5 +1,14 @@
-@use './views/App';
 
-@use './components/Card';
-@use './components/Formulario';
-@use './components/Header';
+// utils
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/typography';
+@import './utils/global';
+
+// views
+@import './views/App';
+
+// componentes
+@import './components/Header';
+@import './components/Formulario';
+@import './components/Card';

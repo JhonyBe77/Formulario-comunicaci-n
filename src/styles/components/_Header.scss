@@ -1,9 +1,11 @@
-@import "../utils/mixins.scss";
-@import "../utils/variables.scss";
+@import '../utils/variables'; // Ruta desde components a utils
+@import '../utils/mixins';    // Ruta desde components a utils
 
 .header {
-    padding: $padding;
-    text-align: center;
-    margin: 1rem auto;
-
+  @include flex-center;
+  padding: 10px;
+  color: $black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }

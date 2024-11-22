@@ -1,22 +1,33 @@
-@import '../utils/mixins.scss';
-@import '../utils/variables.scss';
+@import '../utils/variables'; // Ruta desde components a utils
 
 .card {
-    border-radius: $card-border-radius;
-    width: 300px;
-    padding:30px;
-    text-align: center;
-    margin: 4rem auto;
-    margin: 0 auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: $light; /* Fondo blanco para la tarjeta */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Tarjeta un poco más grande */
+  margin: 20px auto;
+  border: 2px solid $primary-color; /* Borde del mismo color que el borde de la imagen */
 
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: $black;
+  }
 
-    .card-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto 1rem auto;
-        border: 3px solid $primary-color;
-    }
+  p {
+    font-size: 18px;
+    color: $black;
+    margin: 5px 0;
+  }
+
+  img {
+    width: 150px; /* Imagen más grande */
+    height: 150px; /* Asegura que sea cuadrada */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    border: 3px solid $primary-color; /* Borde decorativo de la imagen */
+    margin-top: 15px;
+  }
 }

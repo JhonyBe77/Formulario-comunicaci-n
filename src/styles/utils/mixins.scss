@@ -1,5 +1,22 @@
-@mixin shadow ($shadow-color) {
-    -webkit-box-shadow: 7px 7px 5px -1px $shadow-color;
-    -moz-box-shadow: 7px 7px 5px -1px $shadow-color;
-    box-shadow: 7px 7px 5px -1px $shadow-color;
+@import './variables'; // Ruta relativa dentro de utils
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
 }
