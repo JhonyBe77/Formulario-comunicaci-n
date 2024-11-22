@@ -8,7 +8,7 @@ const Card = ({ data }) => {
       <h1>{data.nombre}</h1>
       <p>{data.email}</p>
       <p>{data.edad}</p>
-      <img src={data.urlFoto} alt="foto" />
+      {data.urlFoto && <img src={data.urlFoto} alt="foto" />}
     </article>
 
   )
