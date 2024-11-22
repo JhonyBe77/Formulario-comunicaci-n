@@ -1,15 +1,13 @@
-@import '../utils/variables'; // Ruta desde components a utils
-
+@import '../utils/variables'; 
 .card {
-  background-color: $light; /* Fondo blanco para la tarjeta */
+  background-color: $light; 
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Tarjeta un poco más grande */
+  max-width: 400px; 
   margin: 20px auto;
-  border: 2px solid $primary-color; /* Borde del mismo color que el borde de la imagen */
-
+  border: 2px solid $primary-color; 
   h1 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -23,11 +21,11 @@
   }
 
   img {
-    width: 150px; /* Imagen más grande */
-    height: 150px; /* Asegura que sea cuadrada */
-    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    border: 3px solid $primary-color; /* Borde decorativo de la imagen */
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 3px solid $primary-color; 
     margin-top: 15px;
   }
 }
